@@ -1,1 +1,4 @@
-To build, run build.sh . The resulting binary prints any data appended to it. This works because the ELF format allows appending data without impacting the execution of the file, and /proc/self/exe allows opening the currently running executable.
+To build, run build.sh . The resulting binary prints any data appended to it. 
+This works because the ELF format allows appending data without impacting the 
+execution of the file, and /proc/self/exe allows opening the currently running 
+executable.
