@@ -1,0 +1,9 @@
+This is a program that I wrote but never actually used because I kind of wanted a way to have a shebang I could include in script files (such as python, or javascript) that aren't intended to be run, which actually makes them say as such when run, and have a non-zero exit code. In hindsight, such a thing is useless, but I made it and decided I may as well include it in this github repo.
+For anyone who doesn't know but is reading this, a shebang is a way of telling linux to run a file with a specific interpreter, generally formatted as follows: #!/path/to/interpreter optional_argument
+A couple of example shebangs with the program being used as intended are as follows:
+
+#!./dontrun
+Prints the file name followed by "is not meant to be run." whenever the file is run via ./filename or execve.
+
+#!./dontrun "is an internal script and not meant to be run seperately."
+Prints the file name followed by "is an internal script and not meant to be run seperately."
