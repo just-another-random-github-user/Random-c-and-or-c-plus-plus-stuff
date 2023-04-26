@@ -1,5 +1,5 @@
 //Yes, this is the only name I can think of for this.
-//It forwards any runs of the program to a compile time declared path.
+//It forwards any calls of the program to a compile time declared path.
 #include <unistd.h>
 
 int main(int argc, char *argv[], char *envp[]) {
