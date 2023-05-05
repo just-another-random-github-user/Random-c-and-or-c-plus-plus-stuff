@@ -9,6 +9,8 @@
 #define FILE_SIZE 0
 #endif
 
+extern int errno;
+
 int main(int argc, char** argv, char** envp) {
 	int fd = open("/proc/self/exe", O_RDONLY);
 	int64_t end = (int64_t)lseek(fd, 0, SEEK_END);
